@@ -1,0 +1,210 @@
+
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+form div {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 100px;
+}
+
+/**
+* ! style  content section
+**/
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #EBFCF4 ;
+  
+  padding: 10px 20px;
+}
+
+small{
+  position:absolute;
+  margin: 3px;
+  visibility: hidden;
+}
+
+
+
+
+.header img {
+  float: left;
+  width: 100px;
+  height: 80px;
+  
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+
+
+
+
+
+
+
+/**
+* ! style rules for form section
+**/
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  /* max-width: 400px; */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+form div input {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid #c4c4c4;
+  padding: 0 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form div {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+input:focus {
+  border: 2px solid blue;
+}
+
+/**
+* ! style rules for social section
+**/
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.question {
+  font-size: 15px;
+}
+
+
+span {
+  color: #07B464;
+  cursor: pointer;
+}
+
+/**
+* ! style rules for form icons
+**/
+
+form div i {
+  position: absolute;
+  padding: 10px;
+}
+
+.success-icon,
+.failure-icon {
+  right: 0;
+  opacity: 0;
+}
+
+.failure-icon , .error {
+  color: red;
+}
+
+.success-icon , .success {
+  color: green;
+}
+
+
+/* .form.success input{
+  border:2px solid rgb(26, 167, 26);
+}
+.form.error input{
+  border:2px solid rgb(228, 29, 22);
+} */
+
+
+
+
+button {
+  margin-top: 15px;
+  width: 100%;
+  height: 45px;
+  background-color: #07B464;
+  border: 2px solid #07B464;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  form  {
+    width: 100%;
+  }
+
+  .btn {
+    flex-direction: column;
+  }
+  .image {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 425px) {
+  form  , .container{ 
+    padding: 20px;
+  }
+}
